@@ -20,4 +20,5 @@ In-detail explanation of these components and their roles are explained in my no
 Check it out!
 
 ### Common commands used in OpenStack
-Most common commands used in OpenStack
+Most common commands used in OpenStack are 
+
