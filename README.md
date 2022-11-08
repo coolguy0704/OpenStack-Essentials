@@ -24,3 +24,8 @@ The most common commands used in OpenStack are listed below:
 
 [Common Commands for core components](https://github.com/coolguy0704/OpenStack-Essentials/tree/main/common_cmds "common commands")
 
+### Troubleshooting
+For basic troubleshooting these folders contain the logs of respective core components.
+![image](https://user-images.githubusercontent.com/116753469/200650138-373920ad-c742-49e5-a993-f0d92a81376d.png)
+
+
