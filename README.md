@@ -19,6 +19,8 @@ In-detail explanation of these components and their roles are explained in my no
 [OpenStack Notes](https://github.com/coolguy0704/OpenStack-Essentials/blob/main/OpenStack_Essentials_Notes.pdf "OpenStack Notes")
 Check it out!
 
-### Common commands used in OpenStack
-Most common commands used in OpenStack are 
+### Commonly commands
+The most common commands used in OpenStack are listed below:
+
+[Common Commands for core components](https://github.com/coolguy0704/OpenStack-Essentials/tree/main/common_cmds "common commands")
 
