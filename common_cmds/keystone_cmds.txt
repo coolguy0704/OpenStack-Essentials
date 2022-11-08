@@ -1,0 +1,13 @@
+cat keystonerc_admin
+source keystonerc_admin
+openstack endpoint list
+openstack endpoint show <Endpoint_ID>
+openstack catalog list
+openstack endpoint list
+openstack endpoint show <Endpoint_ID>
+openstack project create <project_name>
+openstack project show <project_name>
+openstack project set --description “description_text” <project_name>
+openstack user create --project <project_name> --password-prompt <user_name> openstack role list
+openstack role assignment list --project newproject --user developer01
+openstack role add --project <project_name> --user <user_name> _member_ openstack role add --project <project_name> --user <user_name> admin openstack command list | grep openstack.identity -A 130

@@ -1,0 +1,31 @@
+openstack network agent list
+systemctl status neutron-server
+ovs-vsctl show
+openstack network create -h
+openstack network create —project poc intnet
+openstack subnet create subnet1 --subnet-range 10.5.5.0/24 --dns-nameserver 8.8.8.8 —network intnet ip netns
+ip netns exec <namespace> ping 10.5.5.2
+ip netns exec <namespace> ip address show
+ovs-vsctl show
+openstack router create R2
+openstack router add subnet R2 subnet1
+ovs-vsctl show
+ip netns
+ip nets exec <namespace> ip a show
+ip nets exec <namespace> ping 5.5.5.1
+neutron router-gateway-set R2 external_network
+Openstack network list
+openstack server create —image cirros —flavor 1 —nic net-id=<network_ID> inst1
+Openstack security group list
+openstack project list
+openstack security group rule create --src-ip 0.0.0.0/0 --protocol icmp --ingress <group_ID>
+openstack security group rule create --src-ip 0.0.0.0/0 —dst-port 22 —protocol tcp --ingress <group_ID> ip netns exec <namespace> ssh cirros@10.5.5.X
+Ping 10.5.5.1
+ping 192.168.0.178
+openstack subnet list
+openstack floating ip create --subnet <subnet_ID> --floating-ip-address 192.168.0.110 <network_name_or_ID>
+openstack server add floating ip <server_name> <IP_address>
+ping <floating ip>
+ssh root@<floating ip>
+openstack ip availability list --project poc
+$ openstack command list | grep openstack.network -A 70

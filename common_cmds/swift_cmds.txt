@@ -1,0 +1,9 @@
+openstack object store account show openstack container list
+openstack container create container1 openstack container list
+openstack container create container2
+openstack object create -h
+openstack object create container1 keystonerc_admin
+swift post -m "Temp-URL-Key:b3968d0207b54ece87cccc06515a89d4"
+swift tempurl get 1000 /v1/AUTH_72c319360b17412aaa6094d4377c6e08/container1/ \ keystonerc_admin b3968d0207b54ece87cccc06515a89d4
+Openstack endpoint show swift
+openstack command list | grep object_store -A 20
